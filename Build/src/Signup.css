@@ -1,0 +1,85 @@
+/* Signup Form Container */
+.signup-form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    width: 70%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(5px);
+  }
+  
+  /* Title for the signup form */
+  .signup-form h2 {
+    color: #ff6b81;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input fields */
+  .signup-form input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .signup-form input:focus {
+    border-color: #0077b6;
+  }
+  
+  /* Signup Button */
+  .signup-form button {
+    background: linear-gradient(45deg, #ff6b81, #ff3f68);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .signup-form button:hover {
+    background: linear-gradient(45deg, #ff3f68, #ff6b81);
+  }
+  
+  /* Auth Toggle Section (Link to Login page) */
+  .auth-toggle {
+    margin-top: 15px;
+  }
+  
+  .auth-toggle button {
+    background: none;
+    border: none;
+    color: #ff6b81;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .auth-toggle button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsive for Signup */
+  @media (max-width: 768px) {
+    .signup-form {
+      width: 90%;
+    }
+  
+    .signup-form input,
+    .signup-form button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

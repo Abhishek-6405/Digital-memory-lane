@@ -1,0 +1,117 @@
+/* Contact Page - Professional Design */
+.contact-container {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header Section */
+.contact-header {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Content Section */
+.contact-content {
+    max-width: 900px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+    background: #f9f9f9;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #42a5f5;
+    box-shadow: 0px 0px 8px rgba(66, 165, 245, 0.3);
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 180px;
+    resize: none;
+}
+
+/* Submit Button */
+.contact-btn {
+    background: linear-gradient(135deg, #42a5f5, #1e88e5);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(135deg, #1e88e5, #1565c0);
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+.contact-footer {
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content, .contact-header {
+        padding: 25px;
+    }
+
+    .contact-header h1 {
+        font-size: 2.2em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1em;
+    }
+}

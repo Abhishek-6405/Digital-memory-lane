@@ -1,0 +1,296 @@
+/* General Styles */
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;  /* Ensure the content is positioned above the video */
+}
+
+#background-video {
+  position: absolute;  /* Position video behind content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensure video covers the entire screen */
+  z-index: -1;  /* Place the video behind the content */
+  opacity: 0.7;  /* Optional: Adjust opacity for better contrast with content */
+}
+
+/* The rest of your styles remain unchanged */
+
+/* Header */
+.header {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #0077b6;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+  font-size: 1.3rem;
+  color: #555;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Add Memory Button */
+.add-memory-btn {
+  background: linear-gradient(45deg, #ff6b81, #ff3f68);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.add-memory-btn:hover {
+  background: linear-gradient(45deg, #ff3f68, #ff6b81);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Timeline */
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 30px;  /* Space between memory cards */
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Memory Cards */
+.memory-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Memory Info */
+.memory-info {
+  margin-top: 15px;
+}
+
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.gallery-item {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Memory Form */
+.memory-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.memory-form h2 {
+  color: #ff6b81;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.memory-form input,
+.memory-form textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.memory-form input:focus,
+.memory-form textarea:focus {
+  border-color: #0077b6;
+}
+
+.memory-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* Buttons */
+.save-btn,
+.cancel-btn {
+  background: linear-gradient(45deg, #ff6b81, #ff3f68);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  margin: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.save-btn:hover {
+  background: linear-gradient(45deg, #ff3f68, #ff6b81);
+}
+
+.cancel-btn {
+  background: linear-gradient(45deg, #ffb34d, #ff9a00);
+}
+
+.cancel-btn:hover {
+  background: linear-gradient(45deg, #ff9a00, #ffb34d);
+}
+
+/* Remove Memory Button */
+.remove-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Upload Preview */
+.image-preview {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .memory-card {
+    width: 90%;
+  }
+
+  .header {
+    width: 90%;
+  }
+
+  .memory-form {
+    width: 90%;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .save-btn,
+  .cancel-btn,
+  .remove-btn,
+  .add-memory-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Aligns buttons to the center */
+  align-items: center; /* Centers buttons vertically */
+  margin-top: 20px; /* Adds spacing from the content above */
+}
+
+.logout-btn,
+.nav-buttons button {
+  background-color: #ff6b81;
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Slightly larger padding for better appearance */
+  border-radius: 8px; /* Soft rounded corners */
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:hover,
+.nav-buttons button:hover {
+  background-color: #ff3f68;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure the parent container aligns everything in the center */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center;
+  margin-top: 30px; /* Adds spacing from the content above */
+}
